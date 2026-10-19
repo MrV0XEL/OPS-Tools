@@ -1,36 +1,30 @@
 {
-  "schemaVersion": 1,
-  "id": "addon-template",
-  "version": "${version}",
-  "name": "Addon Template",
-  "description": "An addon template for Meteor Client addons.",
+  "schema_version": 1,
+  "id": "ops-tools",
+  "version": "1.0.0",
+  "name": "OPS Tools",
+  "description": "Utility and automation addon for Meteor Client featuring Auto Wither+ and more.",
   "authors": [
-    "seasnail"
+    "Ali Khan"
   ],
   "contact": {
-    "sources": "https://github.com/MeteorDevelopment/meteor-addon-template"
+    "repo": "https://github.com/TrouserStreak/OPS-Tools"
   },
-  "icon": "assets/template/icon.png",
-  "environment": "client",
+  "license": "MIT",
+  "icon": "assets/icon/icon.png",
+  "environment": "*",
   "entrypoints": {
     "meteor": [
-      "com.example.addon.AddonTemplate"
+      "pwn.noobs.trouserstreak.Trouser"
     ]
   },
   "mixins": [
-    "addon-template.mixins.json"
+    "ops-tools.mixins.json"
   ],
-  "custom": {
-    "meteor-client:color": "225,25,25",
-    "modmenu": {
-      "parent": {
-        "id": "meteor-client"
-      }
-    }
-  },
   "depends": {
-    "java": ">=${jdk_version}",
-    "minecraft": "${minecraft_version}",
+    "java": ">=21",
+    "fabricloader": ">=0.15.0",
+    "minecraft": "1.21.11",
     "meteor-client": "*"
   }
 }
