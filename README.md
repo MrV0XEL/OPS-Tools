@@ -8,7 +8,7 @@ the **OPS Tools** category of the Meteor GUI.
 
 ## Supported versions
 
-One jar per Minecraft version: **1.21.4, 1.21.11, 26.1, 26.2, 26.3**. Use the jar that matches your game and the Meteor
+One jar per Minecraft version: **1.21.4, 1.21.11**. Use the jar that matches your game and the Meteor
 Client build for the same version.
 
 ## Installation
