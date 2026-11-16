@@ -8,7 +8,7 @@ the **OPS Tools** category of the Meteor GUI.
 
 ## Supported versions
 
-One jar per Minecraft version: **1.21.4, 1.21.11**. Use the jar that matches your game and the Meteor
+One jar per Minecraft version: **1.21.4, 1.21.11, 26.1, 26.2, 26.3**. Use the jar that matches your game and the Meteor
 Client build for the same version.
 
 ## Installation
@@ -48,8 +48,9 @@ Open a module's settings in the GUI for every option. Names below are as they ap
 | --- | --- | --- |
 | **printer** | Prints a loaded Litematica schematic around you using fast packet placement, with ghost-block checks and an adaptive rate. | Load a schematic in Litematica, stand near it, enable the module. Turn *air place* off if the server's anti-cheat flags it. |
 | **Map Placer** | Fills item frames with maps. *Single* mode fills one frame; *Wall* mode builds a wall and fills a numbered WxH map art. | Hold the maps, pick the mode in settings, right-click to start (see the module's settings). |
-| **advanced-auto-wither** | Builds withers one after another in front of you, with retries, ghost-block checks and an automatic name tag. | Needs soul sand/soil and wither skulls in your inventory. |
+| **advanced-auto-wither** | Builds withers one after another in front of you, with retries, ghost-block checks and an automatic name tag. | Needs soul sand/soil and wither skulls in your hotbar. Aim at the spot and right-click to start (and to stop). Set `start-trigger` to *Keybind* and pick `start-key` to use any other key or mouse button instead, so right-click keeps working normally. |
 | **ender-chest-farmer** | Farms obsidian from ender chests with a burst instant rebreak. Chests are placed from the offhand, the pickaxe stays in the main hand. | Put ender chests in the offhand and a pickaxe without silk touch in your main hand. The first chest is mined normally; then the burst takes over. |
+| **auto-sign-plus** | Places a sign every 5-20 blocks (random gap, configurable) as you travel and writes your text on it, on **both sides**. Optionally dyes it, makes it glow and waxes it using items in your inventory. Floor placement is the default (it looks straight down server-side so you get standing signs, not wall signs); *wall-place* prefers walls and *air-place* clicks the target block itself. | Carry signs (and optionally dye, glow ink sacs, honeycomb). Type your lines in the *Text* group (`{x} {y} {z}` and `{player}` work); the back can use the same lines or its own. Don't sneak while it runs. |
 | **container-cleaner** | Throws unwanted items out of an open container (chest, barrel, shulker, hopper, dispenser). *Blacklist* throws the listed items; *Whitelist* throws everything else. | Open a container with the module on. Set `mode` and `items`. |
 
 ### Chat and interface
@@ -57,6 +58,7 @@ Open a module's settings in the GUI for every option. Names below are as they ap
 | Module | What it does | How to use |
 | --- | --- | --- |
 | **chat-sentinel** | Mute rules, highlight rules and keyword alerts (sound and toast), plus a movable, resizable chat with no black background. Every rule is a regex or a plain word. | With chat open: drag with left mouse to move, Shift+drag to resize, right-click to reset. If `require-drag-key` is on, hold Left Alt. |
+| **gui-style** | Re-skins the Meteor GUI: colour presets (Holographic, Arctic, Deep Ocean, AquaGlass, Crimson, Violet, Midnight, Emerald, Sunset, Mono, Custom), window transparency, rainbow/pulse accent, tint, gradient, vignette and edge glow behind the GUI, background blur, GUI scale and font. Smooth animations (fade in/out, blur ramp, colours that glide, breathing glow) and clicking sounds as you move over and press modules. Original colours come back when you turn it off. | Enable it and pick a `theme`. Use *Custom Colors* for your own, *Animations* and *Sounds* to tune the feel. If a colour doesn't change, toggle `dump-theme` once and send the printed list. |
 | **gui-particles** | Animated snow, rain, stars, bubbles, fireflies, embers or confetti behind the Meteor ClickGUI and HUD editor. | Enable it and choose a particle type. |
 
 ### Stash tools
